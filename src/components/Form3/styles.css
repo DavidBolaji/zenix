@@ -1,0 +1,14 @@
+.borderless {
+  border: none !important;
+  outline-color: none !important;
+  border-radius: 0;
+  transform: translate(15px, 0px);
+  height: 33px;
+  width: 251px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* background-color: red; */
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
+  border-right: 1px solid #cacaca;
+}
