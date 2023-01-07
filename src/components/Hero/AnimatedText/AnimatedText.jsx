@@ -33,13 +33,7 @@ const texts = [
   <Fragment key="text_1">
     <StyledText className="white">ABOUT ME</StyledText>
     <StyledPara className="gray" style={{ color: "#fff" }}>
-      I have proceeded my dream to be a developer as it has been my lifelong
-      ambition. I am a talented Fullstack developer. since graduation I have had
-      the opportunity to enhance my expertise by collaborating with different
-      companies and by creating useful content for both business and customer
-      use. I am naturally persevered, self-confident, quietly curios, innovative
-      and constantly challenging my skills as i am determined to bring change to
-      the world.
+      Zenix Global Enterprise is a company existing to solve your audio, lights and effect needs, we want to help you create that experience you and your audience will never forget. We simply express your feelings and imaginations, beliefs, and essence artistically.
     </StyledPara>
   </Fragment>,
 ];

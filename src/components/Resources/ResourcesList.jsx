@@ -123,6 +123,12 @@ const StyledDrawer = styled(Drawer)`
       font-weight: 400;
     }
   }
+
+  .ant-drawer-close {
+    position: absolute;
+    top: 90px;
+    left: 0;
+  }
   /* background-color: #eb2f96de !important; */
   .ant-drawer-content-wrapper {
     width: 100% !important;
@@ -199,7 +205,7 @@ const ResourcesList = () => {
         <Row gutter={[16]}>{resourceList}</Row>
       </StyledList>
       <StyledDrawer
-        closable={false}
+        // closable={false}
         onClose={onClose}
         open={open}
         footer={[
@@ -221,14 +227,13 @@ const ResourcesList = () => {
         <ContactForm />
          <StyledDrawer
         // width={320}
-        closable={false}
+        // closable={false}
         onClose={onClose2}
         open={open2}
       >
         <h3>Welcome Back</h3>
         <p>
-          Sign up and get access to all our resources for just &#8358; 2,000
-          anually
+          Select plan to Sign up and become a member to get access to all our resources
         </p>
         <SignUpForm />
       </StyledDrawer>

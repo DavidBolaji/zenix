@@ -20,20 +20,31 @@ const HeroStyled = styled.div`
   position: relative;
   width: 90%;
   margin: auto;
-  background: rgba(255, 255, 255, 0.26);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.6px);
-  -webkit-backdrop-filter: blur(7.6px);
+  overflow-y: hidden;
+  background-image: linear-gradient(#4b3aab67, #000000c7),
+  url("https://cdn.dribbble.com/userupload/4102421/file/original-5d05763f6fd89c4f0193259a2eb3c35f.png?compress=1&resize=850x638");
+  /* url("https://res.cloudinary.com/dpi44zxlw/image/upload/v1673132578/e-commerce/product/full_mixer_qwbs6c.png"); */
+  /* filter: blur(1.4); */
+  background-position: center;
 
   @media (max-width: 810px) {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 120px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    /* padding-top: 120px; */
+    margin-top: 100px;
     flex-direction: column;
     text-align: center;
-    height: auto;
+    height: 70vh;
+    background: none;
+
+    .hand {
+      transform: rotate(90deg) !important;
+      display: none;
+    }
+
+    
   }
+
 `;
 
 const StyledGalleryCont = styled.div`
@@ -43,6 +54,12 @@ const StyledGalleryCont = styled.div`
   align-items: center;
   position: relative;
   justify-content: center;
+
+ @media (max-width: 810px) {
+   /* width: 120vw; */
+   height: 400px;
+  }
+
 `;
 
 const StyledGalleryBlock = styled.div`
@@ -76,6 +93,12 @@ const StyledGalleryBlock = styled.div`
     color: #ffa640;
     font-size: 30px;
   }
+
+  @media (max-width: 810px) {
+    transform: scale(2.2);
+    width: 300%;
+  
+  }
 `;
 
 const StyledShadow = styled.div``;
@@ -87,6 +110,15 @@ const StyledHorizontalCarousel = styled.div`
   padding: 5px;
   left: 85px;
   width: 80%;
+
+
+     @media (max-width: 810px) {
+    left: -110px;
+    width: 100vw;
+    height: 70px;
+    transform: scale(0.8) translateX(-5%);
+    bottom: -150px;
+  }
 `;
 
 const StyledVerticalCarousel = styled.div`
@@ -106,6 +138,10 @@ const StyledVerticalCarousel = styled.div`
 
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  @media (max-width: 810px) {
+    right: -100px;
   }
 `;
 
@@ -284,7 +320,7 @@ export default function CatalogComponent() {
     <header>
       <HeroStyled id="#catalog">
         <FaRegHandPointRight
-          className="animate__animated animate__shakeY animate__wobble animate__slow animate__infinite infinite"
+          className="hand animate__animated animate__shakeY animate__wobble animate__slow animate__infinite infinite"
           color="white"
           size={30}
           style={{ transform: "translateX(-50px)" }}

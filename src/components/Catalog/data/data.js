@@ -30,11 +30,7 @@ export const event = {
       name: "TIMKH",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672783003/timkh/FB_IMG_1672731009075_tcyqds.jpg",
     },
-    {
-      id: "e15",
-      name: "TIMKH",
-      pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672783003/timkh/FB_IMG_1672677487926_v3zyun.jpg",
-    },
+
   ],
   KABOD: [
     {
@@ -104,10 +100,6 @@ export const event = {
       name: "EVENT",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782718/event1/PXL_6630_jeofwk.jpg",
     },
-    {
-      id: "eE9",
-      name: "EVENT",
-      pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782718/event1/PXL_6791_ursrvm.jpg",
-    },
+
   ],
 };

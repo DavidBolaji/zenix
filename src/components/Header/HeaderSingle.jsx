@@ -32,7 +32,7 @@ const StyledHeaderSingle = styled.div`
     font-size: 2rem;
   }
 
-  @media (max-width: 801px) {
+  @media (max-width: 810px) {
     margin-top: 100px;
     padding: 10px;
     border-radius: 5px;

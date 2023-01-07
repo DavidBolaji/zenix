@@ -19,7 +19,7 @@ const StyledDrawer = styled(Drawer)`
     color: #fff;
     right: -10px;
     z-index: 100px;
-    top: 10px;
+    top: 80px;
     background: #7b86a4;
     width: 34px;
     height: 40px;
@@ -61,16 +61,12 @@ const StyledNav = styled.nav`
 
 export default function NavBar({ themeSet }) {
   const [open, setOpen] = useState(false);
-  const [current, setCurrent] = useState("");
   const [active, setActive] = useState("Home");
 
   const onClose = () => {
     setOpen(false);
   };
 
-  const handleMouse = (val) => {
-    setCurrent(val);
-  };
 
   return (
     <StyledNav>
@@ -89,24 +85,27 @@ export default function NavBar({ themeSet }) {
       <ul className="flex white none">
         <li
           className={active === "Home" ? "green" : ""}
-          onMouseEnter={() => handleMouse("Home")}
-          onMouseLeave={() => handleMouse("")}
+          onClick={() => setActive('Home')}
+          // onMouseEnter={() => handleMouse("Home")}
+          // onMouseLeave={() => handleMouse("")}
         >
           {/* <a href="/#home">{current === "Home" || active === "Home" ? "Home" : 'Home'}</a> */}
           <Link to="/">Home</Link>
         </li>
         <li
+        onClick={() => setActive('Catalog')}
           className={active === "Catalog" ? "green" : ""}
-          onMouseEnter={() => handleMouse("Catalog")}
-          onMouseLeave={() => handleMouse("")}
+          // onMouseEnter={() => handleMouse("Catalog")}
+          // onMouseLeave={() => handleMouse("")}
         >
           {/* <a href="/#catalog">{current === "catalog" || active === "catalog" ? "Catalog" : 'Catalog'}</a> */}
           <Link to="/catalog">Catalog</Link>
         </li>
         <li
-          className={active === "Home" ? "green" : ""}
-          onMouseEnter={() => handleMouse("Home")}
-          onMouseLeave={() => handleMouse("")}
+        onClick={() => setActive('Resources')}
+          className={active === "Resources" ? "green" : ""}
+          // onMouseEnter={() => handleMouse("Home")}
+          // onMouseLeave={() => handleMouse("")}
         >
           {/* <a href="/#catalog">{current === "catalog" || active === "catalog" ? "Catalog" : 'Catalog'}</a> */}
           <Link to="/resources">Resources</Link>
@@ -125,12 +124,38 @@ export default function NavBar({ themeSet }) {
               setActive("Home");
               setOpen(false);
             }}
-            onMouseEnter={() => handleMouse("Home")}
-            onMouseLeave={() => handleMouse("")}
+            // onMouseEnter={() => handleMouse("Home")}
+            // onMouseLeave={() => handleMouse("")}
           >
-            <a href="/#home">
-              {current === "Home" || active === "Home" ? "< Home />" : "Home"}
-            </a>
+            <Link to="/">
+              {active === "Home" ? "Home" : "Home"}
+            </Link>
+          </li>
+          <li
+            className={active === "Catalog" ? "green" : ""}
+            onClick={() => {
+              setActive("Catalog");
+              setOpen(false);
+            }}
+            // onMouseEnter={() => handleMouse("Home")}
+            // onMouseLeave={() => handleMouse("")}
+          >
+            <Link to="/catalog">
+              {active === "Catalog" ? "Catalog" : "Catalog"}
+            </Link>
+          </li>
+          <li
+            className={active === "Resources" ? "green" : ""}
+            onClick={() => {
+              setActive("Resources");
+              setOpen(false);
+            }}
+            // onMouseEnter={() => handleMouse("Home")}
+            // onMouseLeave={() => handleMouse("")}
+          >
+            <Link to="/resources">
+              {active === "Resources" ? "Resources" : "Resources"}
+            </Link>
           </li>
         </ul>
       </StyledDrawer>

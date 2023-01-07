@@ -10,9 +10,8 @@ import AnimatedText from "./AnimatedText/AnimatedText";
 const HeroStyled = styled.div`
   justify-content: space-between;
   padding: 1.1rem 5rem 0rem 5rem;
-  /* background-color: #25262a; */
   background-color: ${(props) => props.theme.bg};
-  /* transform: rotate(2deg); */
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,32 +29,34 @@ const HeroStyled = styled.div`
   -webkit-backdrop-filter: blur(7.6px);
   overflow: hidden;
 
-  &:after {
-    content: "";
-    /* width: 80%;
-    height: 10px;
-    position: absolute; */
-    bottom: 0;
-    /* background-color: #ff00002c; */
-    /* width: 90vw;
-    margin: auto; */
-    /* transform: rotate(-3deg); */
-    border-radius: 16px;
-    height: 90vh;
-    left: 0;
-    /* border-bottom: 1px solid ${(props) => props.theme.textbg}; */
-  }
-
+ 
   @media (max-width: 810px) {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 120px;
+    margin-top: 100px;
     flex-direction: column;
     text-align: center;
     height: auto;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    /* width: auto; */
   }
 `;
 
+export const StyledRight = styled.div`
+  width: 400;
+
+  @media (max-width: 810px) {
+   padding-top: 0;
+   margin-top: 0;
+
+   img {
+    height: 400px;
+    transform: translateX(-30px);
+   }
+  }
+`
 export const StyledLink = styled.a`
   font-size: 1.2rem;
   font-weight: 600;
@@ -161,15 +162,14 @@ export default function Hero() {
             </StyledLink>
           </div>
         </motion.HeroLeftStyled>
-        <motion.div initial={{ y: 1500 }} animate={{ y: 0 }} exit={{}}>
+        <StyledRight as={motion.div} initial={{ y: 1500 }} animate={{ y: 0 }} exit={{}}>
           <img
             src={
               "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672599603/zen-removebg-preview_nsfrqv.png"
             }
             alt={"zenix"}
-            width={400}
           />
-        </motion.div>
+        </StyledRight>
         {/* <Image src="" width={463} height={513} alt="david" /> */}
       </HeroStyled>
     </header>
