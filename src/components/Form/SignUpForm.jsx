@@ -23,7 +23,7 @@ const validationSchema = Yup.object({
       const upperCase = /[A-Z]/.test(value);
       const lowerCase = /[a-z]/.test(value);
       const number = /[0-9]/.test(value);
-      const specialCharacters = /[_!#$%&'*+/=?`{|}~^.-]/.test(value);
+      const specialCharacters = /[_!#$@%&'*+/=?`{|}~^.-]/.test(value);
       let validConditions = 0;
       const requiredValidConditions = 4;
       const conditions = [upperCase, lowerCase, number, specialCharacters];
@@ -66,7 +66,7 @@ const validationSchema = Yup.object({
           if (invalidConditions) {
             return true;
           } else {
-            return true;
+            return false;
           }
         }
       )

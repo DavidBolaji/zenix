@@ -330,10 +330,10 @@ export default function CatalogComponent() {
           initial={{ y: -1500 }}
           animate={{ y: 0 }}
           exit={{}}
-          onMouseEnter={hoverOn}
-          onMouseLeave={hoverOff}
+         
         >
-          <StyledGalleryBlock size={imgSize}>
+          <StyledGalleryBlock  onMouseEnter={hoverOn}
+          onMouseLeave={hoverOff} size={imgSize}>
             <StyledShadow
               onClick={() => router(`/catalog/${curE}`)}
               className={`shadow ${hover ? "active" : ""}`}

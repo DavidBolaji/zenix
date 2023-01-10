@@ -5,9 +5,16 @@ import styled from "@emotion/styled";
 const StyledText = styled.h1`
   margin: auto;
   margin-top: 10px;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   color: ${(props) => props.theme.text};
+
+
+  @media (max-width: 801px) {
+    span {
+      display: block;
+    }
+  }
 `;
 
 const StyledPara = styled.p`
@@ -23,7 +30,7 @@ const StyledPara = styled.p`
 
 const texts = [
   <Fragment key="text_1">
-    <StyledText className="white">Hi, welcome to Zenix.</StyledText>
+    <StyledText className="white flex-col"><span>Hi,</span> <span>Welcome to Zenix.</span></StyledText>
     <StyledText className="white">Every Day Things are Colorful</StyledText>
     <StyledPara className="gray">
       🦋The knower of the mystery of sound knows the mystery of the whole

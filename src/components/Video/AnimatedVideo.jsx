@@ -4,9 +4,6 @@ import styled from "@emotion/styled";
 
 const StyledVideoCard = styled.div`
   max-width: 500px;
-  /* width: 300px; */
-  /* border: 1px solid #ededed;
-  background-color: #fff; */
   height: 400px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 
@@ -16,7 +13,6 @@ const StyledVideoCard = styled.div`
 
     video {
       height: 100% !important;
-      /* margin: auto; */
       object-fit: cover;
     }
   }
@@ -25,42 +21,42 @@ const StyledVideoCard = styled.div`
     padding: 10px;
   }
 `;
-const texts = [
-  <Fragment key="text_1">
-    <StyledVideoCard>
-      <div className="player">
-        <video
-          controls
-          src={
-            "https://res.cloudinary.com/dpi44zxlw/video/upload/v1672356747/322307310_176012935040347_7918079026087355917_n_tgiw9u.mp4"
-          }
-          width={"100%"}
-          height={"100%"}
-        />
-      </div>
-      {/* <div className='text'>
-            piano tutorial
-        </div> */}
-    </StyledVideoCard>
-  </Fragment>,
-  <Fragment key="text_1">
-    <StyledVideoCard>
-      <div className="player">
-        <video
-          controls
-          src={
-            "https://res.cloudinary.com/dpi44zxlw/video/upload/v1672398679/10000000_507927247866055_8949269750556364856_n_awaezh.mp4"
-          }
-          width={"100%"}
-          height={"100%"}
-        />
-      </div>
-      {/* <div className='text'>
-            piano tutorial
-        </div> */}
-    </StyledVideoCard>
-  </Fragment>,
-];
+// const texts = [
+//   <Fragment key="text_1">
+//     <StyledVideoCard>
+//       <div className="player">
+//         <video
+//           controls
+//           src={
+//             "https://res.cloudinary.com/dpi44zxlw/video/upload/v1672356747/322307310_176012935040347_7918079026087355917_n_tgiw9u.mp4"
+//           }
+//           width={"100%"}
+//           height={"100%"}
+//         />
+//       </div>
+//       {/* <div className='text'>
+//             piano tutorial
+//         </div> */}
+//     </StyledVideoCard>
+//   </Fragment>,
+//   <Fragment key="text_1">
+//     <StyledVideoCard>
+//       <div className="player">
+//         <video
+//           controls
+//           src={
+//             "https://res.cloudinary.com/dpi44zxlw/video/upload/v1672398679/10000000_507927247866055_8949269750556364856_n_awaezh.mp4"
+//           }
+//           width={"100%"}
+//           height={"100%"}
+//         />
+//       </div>
+//       {/* <div className='text'>
+//             piano tutorial
+//         </div> */}
+//     </StyledVideoCard>
+//   </Fragment>,
+// ];
 
 function AnimatedVideo({ items }) {
   const [counter, setCounter] = React.useState(1);
@@ -71,7 +67,7 @@ function AnimatedVideo({ items }) {
       <Fragment key={d.pic}>
         <StyledVideoCard>
           <div className="player">
-            <video controls src={d.pic} width={"100%"} height={"100%"} />
+            <video autoPlay controls src={d.pic} width={"100%"} height={"100%"} />
           </div>
           {/* <div className='text'>
                     piano tutorial
@@ -110,7 +106,7 @@ function AnimatedVideo({ items }) {
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      {texts[counter - 1]}
+      {videoList[counter - 1]}
     </motion.div>
   );
 }

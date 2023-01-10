@@ -4,7 +4,6 @@ import { Form, Field } from "formik";
 import { AntInput, AntPassword } from "../controls/FormControls";
 import { validateEmail, validatPassword } from "../validate/validate";
 import "../styles.css";
-import { Spin } from "antd";
 
 export const Display = ({
   handleSubmit,
@@ -54,7 +53,7 @@ export const Display = ({
         type="submit"
         disabled={isSubmitting}
       >
-        {isSubmitting && <Spin />}Login
+        Login
       </button>
     </div>
   </Form>

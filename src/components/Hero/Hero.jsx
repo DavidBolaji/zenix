@@ -125,7 +125,7 @@ export default function Hero() {
           <AnimatedText />
           <div>
             <StyledLink
-              href="https://wa.me/+2348107483900"
+              href="https://wa.me/+2347046916469"
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
               className={`animate__animated animate__flash animate__slow ${

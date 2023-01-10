@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Empty } from "antd";
 
 const StyledAudioCard = styled.div`
   max-width: 500px;
@@ -24,16 +25,15 @@ const StyledAudioCard = styled.div`
   }
 `;
 
-const AudioCard = () => {
+const AudioCard = ({items}) => {
   return (
     <>
+      {items[0].pic !== "" ? 
       <StyledAudioCard>
         <div className="player">
           <audio
             controls
-            src={
-              "https://res.cloudinary.com/dpi44zxlw/video/upload/v1672356747/322307310_176012935040347_7918079026087355917_n_tgiw9u.mp4"
-            }
+            src={items[0].pic}
             width={"100%"}
             height={"100%"}
           />
@@ -42,6 +42,9 @@ const AudioCard = () => {
             piano tutorial
         </div> */}
       </StyledAudioCard>
+      : 
+      <Empty />
+      }
     </>
   );
 };

@@ -73,40 +73,40 @@ export const data = {
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782832/kabod/FB_IMG_1672676898483_nlwn0a.jpg",
     },
   ],
-  EVENT: [
+  "KING'S COURT": [
     {
       id: "eE3",
-      name: "EVENT",
+      name: "KING'S COURT",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782721/event1/PXL_6822_arbysj.jpg",
     },
     {
       id: "eE4",
-      name: "EVENT",
+      name: "KING'S COURT",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782721/event1/PXL_6983_sdfxi4.jpg",
     },
     {
       id: "eE5",
-      name: "EVENT",
+      name: "KING'S COURT",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782718/event1/PXL_6797_of7w8c.jpg",
     },
     {
       id: "eE6",
-      name: "EVENT",
+      name: "KING'S COURT",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782718/event1/PXL_6690_osvov0.jpg",
     },
     {
       id: "eE7",
-      name: "EVENT",
+      name: "KING'S COURT",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782718/event1/PXL_6485_upypcv.jpg",
     },
     {
       id: "eE8",
-      name: "EVENT",
+      name: "KING'S COURT",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782718/event1/PXL_6630_jeofwk.jpg",
     },
     {
       id: "eE9",
-      name: "EVENT",
+      name: "KING'S COURT",
       pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782718/event1/PXL_6791_ursrvm.jpg",
     },
   ],
@@ -117,26 +117,21 @@ export const video = {
     {
       id: "e1",
       name: "TIMKH",
-      pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672783019/timkh/FB_IMG_1672731173530_bcukoy.jpg",
+      pic: "",
     },
   ],
   KABOD: [
     {
       id: "eS3",
       name: "KABOD",
-      pic: "https://res.cloudinary.com/dpi44zxlw/video/upload/v1672356747/322307310_176012935040347_7918079026087355917_n_tgiw9u.mp4",
-    },
-    {
-      id: "eS3",
-      name: "KABOD",
-      pic: "https://res.cloudinary.com/dpi44zxlw/video/upload/v1672398679/10000000_507927247866055_8949269750556364856_n_awaezh.mp4",
+      pic: "https://res.cloudinary.com/dpi44zxlw/video/upload/v1673345846/WhatsApp_Video_2023-01-03_at_08.24.54_klw85r.mp4",
     },
   ],
-  EVENT: [
+  "KING'S COURT": [
     {
       id: "eE3",
-      name: "EVENT",
-      pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782721/event1/PXL_6822_arbysj.jpg",
+      name: "KING'S COURT",
+      pic: "",
     },
   ],
 };
@@ -146,21 +141,21 @@ export const audio = {
     {
       id: "e1",
       name: "TIMKH",
-      pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672783019/timkh/FB_IMG_1672731173530_bcukoy.jpg",
+      pic: "",
     },
   ],
   KABOD: [
     {
       id: "eS3",
       name: "KABOD",
-      pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782837/kabod/FB_IMG_1672677217840_g4ttvd.jpg",
+      pic: "https://res.cloudinary.com/dpi44zxlw/video/upload/v1673345846/WhatsApp_Video_2023-01-03_at_08.24.54_klw85r.mp4",
     },
   ],
-  EVENT: [
+  "KING'S COURT": [
     {
       id: "eE3",
-      name: "EVENT",
-      pic: "https://res.cloudinary.com/dpi44zxlw/image/upload/v1672782721/event1/PXL_6822_arbysj.jpg",
+      name: "KING'S COURT",
+      pic: "",
     },
   ],
 };

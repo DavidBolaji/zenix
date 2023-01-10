@@ -2,8 +2,6 @@ import React from "react";
 import { Form, Field } from "formik";
 import { AntInput, AntPassword } from "../controls/FormControls";
 
-import { Spin } from "antd";
-
 import { validateEmail, validatPassword } from "../validate/validate";
 import FormPhone from "../../Form3/FormPhone";
 import FormSelect from "../../Form3/FormSelect";
@@ -59,7 +57,7 @@ export const Display2 = ({
         type="submit"
         // disabled={isSubmitting}
       >
-        {isSubmitting && <Spin />}Login
+        Sign Up
       </button>
     </div>
   </Form>

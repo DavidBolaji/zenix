@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { Empty } from "antd";
 import AnimatedVideo from "./AnimatedVideo";
 
 const StyledVideoCard = styled.div`
@@ -28,12 +29,13 @@ const StyledVideoCard = styled.div`
 const VideoCard = ({ items }) => {
   return (
     <>
+     {items[0].pic !== "" ? 
       <StyledVideoCard>
         <AnimatedVideo items={items} />
-        {/* <div className='text'>
-            piano tutorial
-        </div> */}
       </StyledVideoCard>
+      : 
+      <Empty />
+      }
     </>
   );
 };
