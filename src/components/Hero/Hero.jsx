@@ -128,9 +128,7 @@ export default function Hero() {
               href="https://wa.me/+2347046916469"
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
-              className={`animate__animated animate__flash animate__slow ${
-                !hover ? "animate__infinite infinite" : ""
-              } green`}
+              className={`animate__animated animate__flash animate__slow green`}
             >
               <Button className="block">Join our</Button>
             </StyledLink>
@@ -138,9 +136,7 @@ export default function Hero() {
               href="https://wa.me/+2348107483900"
               onMouseEnter={handleHover}
               onMouseLeave={handleHover}
-              className={`animate__animated animate__flash animate__slow ${
-                !hover ? "animate__infinite infinite" : ""
-              } green`}
+              className={`animate__animated animate__flash animate__slow green`}
             >
               <Avatar
                 style={{ backgroundColor: "#f7bf48" }}

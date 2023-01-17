@@ -5,7 +5,7 @@ import gsap, { Elastic } from "gsap";
 import { event } from "./data/data";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { FaRegHandPointRight } from "react-icons/fa";
+import { FaRegHandPointDown, FaRegHandPointRight } from "react-icons/fa";
 import { getImage } from "./utils/helpers";
 // import Typewriter from "typewriter-effect";
 
@@ -21,11 +21,15 @@ const HeroStyled = styled.div`
   width: 90%;
   margin: auto;
   overflow-y: hidden;
-  background-image: linear-gradient(#4b3aab67, #000000c7),
-  url("https://cdn.dribbble.com/userupload/4102421/file/original-5d05763f6fd89c4f0193259a2eb3c35f.png?compress=1&resize=850x638");
+  /* background-image: linear-gradient(#4b3aab67, #000000c7), */
+  /* url("https://cdn.dribbble.com/userupload/4102421/file/original-5d05763f6fd89c4f0193259a2eb3c35f.png?compress=1&resize=850x638"); */
   /* url("https://res.cloudinary.com/dpi44zxlw/image/upload/v1673132578/e-commerce/product/full_mixer_qwbs6c.png"); */
   /* filter: blur(1.4); */
   background-position: center;
+
+  .hand2 {
+    display: none;
+  }
 
   @media (max-width: 810px) {
     /* padding-left: 20px; */
@@ -42,6 +46,9 @@ const HeroStyled = styled.div`
       display: none;
     }
 
+    .hand2 {
+      display: block;
+    }
     
   }
 
@@ -71,7 +78,7 @@ const StyledGalleryBlock = styled.div`
   position: relative;
   box-shadow: 0px 0px 10px 10px rgba(30, 2, 2, 0.5);
   cursor: pointer;
-  transform: scale(0.6);
+  transform: scale(0.8);
   /* background-color: #000; */
 
   img {
@@ -97,7 +104,7 @@ const StyledGalleryBlock = styled.div`
   @media (max-width: 810px) {
     transform: scale(2.2);
     width: 300%;
-  
+    /* height: 200px; */
   }
 `;
 
@@ -117,7 +124,7 @@ const StyledHorizontalCarousel = styled.div`
     width: 100vw;
     height: 70px;
     transform: scale(0.8) translateX(-5%);
-    bottom: -150px;
+    bottom: -110px;
   }
 `;
 
@@ -321,6 +328,13 @@ export default function CatalogComponent() {
       <HeroStyled id="#catalog">
         <FaRegHandPointRight
           className="hand animate__animated animate__shakeY animate__wobble animate__slow animate__infinite infinite"
+          color="white"
+          size={30}
+          style={{ transform: "translateX(-50px)" }}
+          />
+          <h3 style={{color: 'white', marginBottom: '10px', fontSize: 12}}>Click to view more</h3>
+        <FaRegHandPointDown
+          className="hand2 animate__animated animate__shakeY animate__wobble animate__slow animate__infinite infinite"
           color="white"
           size={30}
           style={{ transform: "translateX(-50px)" }}
